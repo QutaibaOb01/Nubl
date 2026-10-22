@@ -1,0 +1,31 @@
+name: Nubl
+options:
+  bundleIdPrefix: org.nubl
+  deploymentTarget:
+    iOS: "15.0"
+  developmentLanguage: ar
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "9.0"
+    CURRENT_PROJECT_VERSION: "11"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+targets:
+  Nubl:
+    type: application
+    platform: iOS
+    sources:
+      - path: Nubl
+      - path: web
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.nubl.app
+        PRODUCT_NAME: Nubl
+        INFOPLIST_FILE: Nubl/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+    scheme: {}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0B3D2E">
+<title>نُبل — صدقة جارية</title>
+<meta name="description" content="نُبل: القرآن الكريم بصوت ياسر الدوسري، والأذكار، ومواقيت الصلاة، والقبلة — صدقة جارية عن روح نبيلة مصباح محمد إسماعيل">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="نُبل">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<!--SPLASH-->
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="splash" aria-hidden="true">
+  <div class="sp-stars"></div>
+  <div class="sp-center">
+    <svg class="sp-mark" viewBox="0 0 512 512" aria-hidden="true">
+      <defs><linearGradient id="spg" x1="0" y1="0" x2=".85" y2="1"><stop offset="0" stop-color="#FBE7B5"/><stop offset=".55" stop-color="#D9AE62"/><stop offset="1" stop-color="#B98637"/></linearGradient></defs>
+      <path class="sp-arch" d="M132 432V262c0-34 14-64 40-88l84-78 84 78c26 24 40 54 40 88v170" fill="none" stroke="url(#spg)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="sp-stem" d="M256 436C254 380 258 320 256 262" fill="none" stroke="#DCB168" stroke-width="13" stroke-linecap="round"/>
+      <path class="sp-leaf a" d="M252 366c-56-4-86-38-88-86 52 2 86 34 88 86z" fill="#9FD3B0"/>
+      <path class="sp-leaf b" d="M260 330c54-6 84-40 86-88-52 4-84 36-86 88z" fill="#E6C27F"/>
+      <path class="sp-bud" d="M256 252c-30-26-34-62-1-104 34 42 31 78 1 104z" fill="url(#spg)"/>
+    </svg>
+    <h1 class="sp-name">نُبل</h1>
+    <p class="sp-tag">خيرٌ يبقى، وأثرٌ لا ينقطع</p>
+  </div>
+  <div class="sp-memory">
+    <span>صدقةٌ جارية عن روح</span>
+    <strong>نبيلة مصباح محمد إسماعيل</strong>
+    <small>رحمها الله رحمةً واسعة</small>
+  </div>
+</div>
+
+<div id="app">
+  <main id="view" tabindex="-1"></main>
+  <div id="mini" hidden></div>
+  <nav id="tabbar" aria-label="التنقل الرئيسي"></nav>
+</div>
+<div id="layer"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/ios-shim.js"></script>
+<script src="vendor/adhan.umd.min.js" defer></script>
+<script src="js/icons.js" defer></script>
+<script src="data/meta.js" defer></script>
+<script src="data/content.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/prayer.js" defer></script>
+<script src="js/audio.js" defer></script>
+<script src="js/pages-main.js" defer></script>
+<script src="js/pages-quran.js" defer></script>
+<script src="js/pages-tools.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
